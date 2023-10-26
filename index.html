@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcb2679705.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <div id="beforeText" class="container">
+            <div class="heading">
+                <h1>Enter Your Date Of Birth</h1>
+            </div>
+            <div class="input-container">
+                <input type="date" id="dobInput" />
+                <button type="button" id="dobButton">Add DOB</button>
+            </div>
+        </div>
+        
+        <div id="afterText" class="container hide bdayContainer">
+            <h1 id="countdown">Time Until Your Birthday:</h1>
+            <div class="time-container">
+                <h2>
+                    <div id="remainingDays">0</div>
+                    Days
+                </h2>
+                <h2>
+                    <div id="remainingHours">0</div>
+                    Hours
+                </h2>
+                <h2>
+                    <div id="remainingMinutes">0</div>
+                    Minutes
+                </h2>
+                <h2>
+                    <div id="remainingSeconds">0</div>
+                    Seconds
+                </h2>
+            </div>
+            <h2 id="birthdayMessage" class="hide">Happy Birthday!</h2>
+            <button type="button" id="happyBirthdayButton" class="hide">Say Happy Birthday</button>
+        </div>
+        
+        <div class="settings">
+            <i id="settingIcon" class="fa fa-cog"></i>
+            <div id="settingContent" class="settings-content hide">
+                <input type="date" id="dobInput" />
+                <button type="button" id="dobButton">Add DOB</button>
+            </div>
+            <button type="button" id="reload" class="reload">Reload</button>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
